@@ -10,26 +10,51 @@
     <table>
       <tr>
         <td>
-          <form>
+          <form onsubmit="event.preventDefault();onFormsubmit();" autocomplete="off">
             <div>
               <label>Full Name</label>
-              <input type="text" name="fullname" />
+              <input type="text" name="fullname" id="fullname"/>
             </div>
 
             <div>
               <label>Emp Code</label>
-              <input type="text" name="empcode" />
+              <input type="text" name="empcode" id="empcode"/>
+            </div>
+
+            <div>
+              <label>Salary</label>
+              <input type="text" name="salary" id="salary"/>
             </div>
 
             <div>
               <label>city</label>
-              <input type="text" name="city" />
+              <input type="text" name="city" id="city"/>
             </div>
 
             <div class="form-action-button">
-              <input type="submit"/>
+              <input type="submit" />
             </div>
           </form>
+        </td>
+
+        <td>
+            <table class="list" id="employeeList">
+                <thead>
+                    <tr>
+                        <th>Full Name</th>
+                        <th>Emp code</th>
+                        <th>Salary</th>
+                        <th>City</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+                <tbody>
+
+                </tbody>
+            </table>
         </td>
       </tr>
     </table>
